@@ -64,7 +64,7 @@ for integers $w_1 \in \{0,1,2\}$, $w_2 \in \{-2,\ldots,2\}$, keeping only $c \le
 The 7 distinct absolute coordinate values are:
 $$0,\quad \frac{2-\sqrt{3}}{2},\quad \frac{\sqrt{3}-1}{2},\quad \frac{1}{2},\quad \sqrt{\sqrt{3}-1},\quad \frac{\sqrt{3}}{2},\quad 1$$
 
-All coordinates lie in $\mathbb{Q}(\sqrt{3},\,\sqrt{\sqrt{3}-1})$, a degree-4 extension of $\mathbb{Q}$, with denominator 2.
+All coordinates lie in $\mathbb{Q}(\sqrt{3},\sqrt{\sqrt{3}-1})$, a degree-4 extension of $\mathbb{Q}$, with denominator 2.
 
 **Construction pipeline:**
 1. Generate 126-point connected component with 108 triples
