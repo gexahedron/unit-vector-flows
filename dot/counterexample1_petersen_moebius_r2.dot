@@ -1,0 +1,118 @@
+digraph {
+  graph [fontname="georgia" pad="0.22,0.06" bgcolor=white outputorder="edgesfirst" splines=spline dpi=300 margin=0]
+  node [fontname="georgia" style="filled" shape=circle fixedsize=shape width=0.3 height=0.3 fontsize="14"]
+  edge [fontname="georgia" color="gray29" minlen=3 labeldistance=3 penwidth=1.8 fontsize="11" arrowhead=normal arrowsize=0.7]
+
+  p0 [label="" fillcolor="lightskyblue" color="white" pos="-10.00000,2.00000!", pin=true];
+  p1 [label="" fillcolor="lightskyblue" color="white" pos="-11.73210,-1.00000!", pin=true];
+  p2 [label="" fillcolor="lightskyblue" color="white" pos="-8.26795,-1.00000!", pin=true];
+  p3 [label="" fillcolor="lightskyblue" color="white" pos="-10.00000,0.00000!", pin=true];
+  p4 [label="" fillcolor="lightskyblue" color="white" pos="-9.31596,-1.87939!", pin=true];
+  p5 [label="" fillcolor="lightskyblue" color="white" pos="-10.68400,-1.87939!", pin=true];
+  p6 [label="" fillcolor="lightskyblue" color="white" pos="-8.71443,1.53209!", pin=true];
+  p7 [label="" fillcolor="lightskyblue" color="white" pos="-8.03038,0.34730!", pin=true];
+  p8 [label="" fillcolor="lightskyblue" color="white" pos="-11.28560,1.53209!", pin=true];
+  p9 [label="" fillcolor="lightskyblue" color="white" pos="-11.96960,0.34730!", pin=true];
+
+  m0 [label="" fillcolor="hotpink" color="white" pos="-4.80000,1.99872!", pin=true];
+  m1 [label="" fillcolor="hotpink" color="white" pos="-3.62428,1.61661!", pin=true];
+  m2 [label="" fillcolor="hotpink" color="white" pos="-2.89763,0.61725!", pin=true];
+  m3 [label="" fillcolor="hotpink" color="white" pos="-2.89763,-0.61725!", pin=true];
+  m4 [label="" fillcolor="hotpink" color="white" pos="-3.62428,-1.61661!", pin=true];
+  m5 [label="" fillcolor="hotpink" color="white" pos="-4.80000,-1.99872!", pin=true];
+  m6 [label="" fillcolor="hotpink" color="white" pos="-5.97572,-1.61661!", pin=true];
+  m7 [label="" fillcolor="hotpink" color="white" pos="-6.70237,-0.61725!", pin=true];
+  m8 [label="" fillcolor="hotpink" color="white" pos="-6.70237,0.61725!", pin=true];
+  m9 [label="" fillcolor="hotpink" color="white" pos="-5.97572,1.61661!", pin=true];
+
+  // Petersen edges
+  p8 -> p9 [color="steelblue3", labeldistance=5.0, taillabel="(1-φ, 1, φ) : 5         "];
+  p5 -> p4 [color="purple", labeldistance=3.0, taillabel="       (-1, -φ, φ-1) : 2"];
+  p7 -> p6 [color="steelblue3", labeldistance=3.0, taillabel="               (φ, 1-φ, 1) : 2"];
+  p9 -> p1 [color="purple", labeldistance=3.0, taillabel="(1-φ, -1, φ) : 4                "];
+  p0 -> p4 [color="steelblue3", labeldistance=3.0, taillabel="(φ, φ-1, 1) : 1    "];
+  p7 -> p3 [color="steelblue3", labeldistance=2.5, taillabel="(-1, φ, φ-1) : 2           "];
+  p1 -> p5 [color="steelblue3", labeldistance=3.0, taillabel="(1, -φ, φ-1) : 3             "];
+  p2 -> p7 [color="purple", labeldistance=3.0, taillabel="(φ-1, 1, φ) : 4                      "];
+  p0 -> p8 [color="steelblue3", labeldistance=3.0, taillabel="(-φ, 1-φ, 1) : 2          "];
+  p4 -> p2 [color="steelblue3", labeldistance=3.0, taillabel="               (φ-1, -1, φ) : 3"];
+  p1 -> p6 [color="steelblue3", labeldistance=3.0, taillabel="              (-φ, φ-1, 1) : 1"];
+  p3 -> p8 [color="purple", labeldistance=5.0, headlabel="(1, φ, φ-1) : 3      "];
+  p6 -> p0 [color="purple", labeldistance=3.0, taillabel="        (0, 0, 2) : 3"];
+  p9 -> p2 [color="steelblue3", labeldistance=3.5, taillabel="    (0, 2, 0) : 1"];
+  p5 -> p3 [color="steelblue3", labeldistance=2.0, taillabel="              (2, 0, 0) : 1"];
+
+  // Möbius ladder 10-cycle
+  m1 -> m0 [color="orangered3", labeldistance=0.5, headlabel="                                                  (x, x-y, 2*φ-2) : 5"];
+  m2 -> m1 [color="orangered3", labeldistance=2.6, taillabel="                             (x+1-φ, x-y-1, φ-2) : 1"];
+  m2 -> m3 [color="orangered3", labeldistance=2.8, taillabel="                                            (φ-x-2, y+1-x-φ, 1) : 1"];
+  m4 -> m3 [color="orangered3", labeldistance=2.8, taillabel="                              (x+2-φ, x+φ-y-1, 1) : 2"];
+  m4 -> m5 [color="orangered3", labeldistance=2.4, headlabel="                                  (φ-x-1, y+1-x, φ-2) : 1"];
+  m5 -> m6 [color="orangered3", labeldistance=2.4, headlabel="(-x, y-x, 2*φ-2) : 5                "];
+  m6 -> m7 [color="orangered3", labeldistance=2.8, taillabel="(1-x-φ, y-x-1, φ-2) : 1                                              "];
+  m8 -> m7 [color="orangered3", labeldistance=3.2, taillabel="                                              (x+φ-2, x+1-y-φ, 1) : 1"];
+  m8 -> m9 [color="orangered3", labeldistance=2.6, taillabel="  (2-x-φ, y+φ-x-1, 1) : 2"];
+  m0 -> m9 [color="orangered3", labeldistance=2.4, taillabel="(x+φ-1, x+1-y, φ-2) : 1                          "];
+  // Möbius ladder matching coming from the 5 shared point-pairs
+  m0 -> m5 [color="purple", labeldistance=2.4, taillabel="(1-φ, -1, φ) : 4      "];
+  m6 -> m1 [color="purple", labeldistance=4.4, taillabel="(φ-1, 1, φ) : 4          "];
+  m7 -> m2 [color="purple", labeldistance=2.4, headlabel="\n\n\n\n\n(-1, -φ, φ-1) : 2         "];
+  m3 -> m8 [color="purple", labeldistance=-2.4, headlabel="                                  (0, 0, 2) : 3"];
+  m9 -> m4 [color="purple", labeldistance=5.4, headlabel="      (1, φ, φ-1) : 3"];
+
+
+  // Left side: the 10 icosidodecahedron triple pairs form the Petersen graph.
+  // Right side: the 10 other triple pairs form a Möbius ladder M10.
+  // The 5 shared old point-pairs appear in both graphs.
+
+  // Point-pair orbit labels u_k used on the edges
+  // u0: (y+φ-1, -(x-1), -φ), q = -1, kind = new_only
+  // u1: (-(y-1), x+φ, φ-1), q = -1, kind = new_only
+  // u2: (-φ, -(φ+1), 1), q = +2, kind = shared
+  // u3: (φ+1, -1, -φ), q = -1, kind = old_only
+  // u4: (0, 0, 2*φ), q = +3, kind = shared
+  // u5: (-(φ+1), 1, -φ), q = -2, kind = old_only
+  // u6: (φ, φ+1, 1), q = +3, kind = shared
+  // u7: (y-φ+1, -(x+1), -φ), q = -2, kind = new_only
+  // u8: (-(y+1), -(φ-x), φ-1), q = -1, kind = new_only
+  // u9: (-(y-φ+1), x+1, -φ), q = -1, kind = new_only
+  // u13: (φ, -(φ+1), -1), q = -2, kind = old_only
+  // u14: (-2*φ, 0, 0), q = -1, kind = old_only
+  // u16: (-1, -φ, -(φ+1)), q = -4, kind = shared
+  // u18: (y+φ-1, -(x-1), φ), q = +2, kind = new_only
+  // u22: (y-1, -(x+φ), φ-1), q = -1, kind = new_only
+  // u25: (-1, -φ, φ+1), q = +4, kind = shared
+  // u26: (-φ, φ+1, -1), q = -3, kind = old_only
+  // u27: (1, -φ, φ+1), q = +3, kind = old_only
+  // u28: (-(φ+1), -1, -φ), q = -1, kind = old_only
+  // u29: (φ+1, 1, -φ), q = -2, kind = old_only
+  // u30: (-1, φ, φ+1), q = +5, kind = old_only
+  // u33: (y+1, φ-x, φ-1), q = -1, kind = new_only
+  // u34: (-y, x, 2), q = +5, kind = new_only
+  // u36: (0, 2*φ, 0), q = +1, kind = old_only
+  // u42: (-y, x, -2), q = -5, kind = new_only
+
+  // Petersen vertex mapping
+  // 0 = T2: (4, 28, 29) / (19, 40, 49)
+  // 1 = T5: (3, 25, 26) / (24, 37, 48)
+  // 2 = T11: (16, 27, 36) / (35, 38, 47)
+  // 3 = T17: (6, 13, 14) / (17, 31, 32)
+  // 4 = T13: (2, 47, 49) / (10, 27, 28)
+  // 5 = T12: (2, 26, 32) / (10, 14, 48)
+  // 6 = T19: (3, 4, 5) / (15, 19, 24)
+  // 7 = T16: (5, 13, 35) / (15, 16, 17)
+  // 8 = T8: (6, 39, 40) / (29, 30, 31)
+  // 9 = T18: (25, 36, 39) / (30, 37, 38)
+  // Möbius vertex mapping
+  // 0 = T0: (8, 37, 45) / (25, 41, 42)
+  // 1 = T9: (1, 16, 45) / (11, 35, 42)
+  // 2 = T4: (0, 1, 2) / (10, 11, 12)
+  // 3 = T1: (0, 4, 23) / (12, 18, 19)
+  // 4 = T15: (6, 22, 23) / (18, 31, 44)
+  // 5 = T3: (22, 34, 37) / (25, 44, 46)
+  // 6 = T14: (16, 33, 34) / (35, 43, 46)
+  // 7 = T6: (2, 9, 33) / (10, 20, 43)
+  // 8 = T7: (4, 7, 9) / (19, 20, 21)
+  // 9 = T10: (6, 7, 8) / (21, 31, 41)
+
+}
