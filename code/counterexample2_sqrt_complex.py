@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Counterexample 2 to Jain's second conjecture (S^2 nz5-flow).
+Superset of counterexample 2 to Jain's second conjecture (S^2 nz5-flow).
 
 126-point subset of S^2 constructed via the "square root complex" method
 with parameters (v1=1, v2=3, w=1). All coordinates lie in Q(√3).
