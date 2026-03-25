@@ -2,8 +2,8 @@
 """
 Counterexample 2 to Jain's second conjecture (S^2 nz5-flow).
 
-402-point subset of S^2 constructed via the "square root complex" method
-with parameters (v1=1, v2=3, w=7). All coordinates lie in Q(√3).
+126-point subset of S^2 constructed via the "square root complex" method
+with parameters (v1=1, v2=3, w=1). All coordinates lie in Q(√3).
 
 This point set admits a nowhere-zero 6-flow (values in {±1,...,±5})
 but NOT a nowhere-zero 5-flow (values in {±1,...,±4}).
@@ -28,7 +28,7 @@ import numpy as np
 
 V1 = 1       # first radicand
 V2 = 3       # second radicand
-W_DENOM = 7  # denominator
+W_DENOM = 1  # denominator
 K = 2        # multiplier for range of w1, w2
 DIVIDER = 2  # divider for sqrt values
 
