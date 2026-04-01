@@ -10,7 +10,7 @@ Code and data accompanying the paper:
 
 ## Background
 
-K. Jain posed two conjectures about unit vector flows on graphs. The **second conjecture** ($S^2$ nz5-flow conjecture) states:
+K. Jain posed two conjectures on [Open Problem Garden](http://www.openproblemgarden.org/op/unit_vector_flows) website about unit vector flows on graphs. The **second conjecture** ($S^2$ nz5-flow conjecture) states:
 
 > There exists a map $q : S^2 \to \{-4,-3,-2,-1,1,2,3,4\}$ such that antipodal points sum to 0, and any three points equidistant on a great circle also sum to 0.
 
@@ -25,6 +25,8 @@ Together with Jain's first conjecture (every bridgeless graph has a unit vector 
 **50 points, 40 great-circle triples, 25 antipodal pairs.**
 
 Starting from the 30 vertices of the icosidodecahedron (which correspond to the Petersen graph and admit a nz5-flow), we expand by intersecting pairs of small circles at height $h = 1/2$ above each vertex. The resulting 50-point set with 40 great-circle triples requires a nz6-flow.
+
+See it in (motion)[https://www.youtube.com/watch?v=W0n6gg3YEm0]!
 
 Coordinates lie in $\mathbb{Q}(\varphi, x)$ where $\varphi = \frac{1+\sqrt{5}}{2}$ is the golden ratio and $x = 2/5^{1/4}$.
 
