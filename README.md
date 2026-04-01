@@ -26,7 +26,7 @@ Together with Jain's first conjecture (every bridgeless graph has a unit vector 
 
 Starting from the 30 vertices of the icosidodecahedron (which correspond to the Petersen graph and admit a nz5-flow), we expand by intersecting pairs of small circles at height $h = 1/2$ above each vertex. The resulting 50-point set with 40 great-circle triples requires a nz6-flow.
 
-See it in [motion](https://www.youtube.com/watch?v=W0n6gg3YEm0)!
+Check it out on [youtube](https://www.youtube.com/watch?v=W0n6gg3YEm0)!
 
 Coordinates lie in $\mathbb{Q}(\varphi, x)$ where $\varphi = \frac{1+\sqrt{5}}{2}$ is the golden ratio and $x = 2/5^{1/4}$.
 
